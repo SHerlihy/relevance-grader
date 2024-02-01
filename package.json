@@ -1,11 +1,11 @@
 {
-  "name": "backend",
+  "name": "grade service",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\" ",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon --env-file=.env -q dist/index.js\" ",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
