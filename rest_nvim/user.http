@@ -1,0 +1,19 @@
+# :RestSelectEnv backend/.env
+GET http://localhost:{{PORT}}/api/v1/user
+
+POST http://localhost:{{PORT}}/api/v1/user/login
+Content-type: application/json
+
+{
+    "email": "test@mail.com",
+    "password": "testword"
+}
+
+POST http://localhost:{{PORT}}/api/v1/user/signup
+Content-type: application/json
+
+{
+    "name": "Test Name",
+    "email": "test@mail.com",
+    "password": "testword"
+}
